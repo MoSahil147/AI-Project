@@ -1,16 +1,16 @@
 {
-    "nodes": [
-      { "id": "A", "exit": false },
-      { "id": "B", "exit": false },
-      { "id": "C", "exit": false },
-      { "id": "D", "exit": true },
-      { "id": "E", "exit": false }
-    ],
-    "edges": [
-      { "from": "A", "to": "B" },
-      { "from": "B", "to": "C" },
-      { "from": "C", "to": "D" },
-      { "from": "A", "to": "E" },
-      { "from": "E", "to": "D" }
-    ]
-  }
+  "nodes": [
+    { "id": "A", "exit": false },
+    { "id": "B", "exit": false },
+    { "id": "C", "exit": false },
+    { "id": "D", "exit": true },
+    { "id": "E", "exit": false }
+  ],
+  "edges": [
+    { "from": "A", "to": "B" },
+    { "from": "B", "to": "C" },
+    { "from": "C", "to": "D" },
+    { "from": "A", "to": "E" },
+    { "from": "E", "to": "D" }
+  ]
+}
