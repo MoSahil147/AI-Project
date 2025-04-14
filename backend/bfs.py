@@ -8,6 +8,7 @@ def bfs(graph, start_node):
 
     while queue:
         current = queue.popleft()
+        # If this node is an exit, reconstruct the path
         if graph.is_exit(current):
             return reconstruct_path(predecessor, start_node, current)
 
@@ -17,7 +18,7 @@ def bfs(graph, start_node):
                 predecessor[neighbor] = current
                 queue.append(neighbor)
 
-    return []
+    return []  # Return empty if no exit is found
 
 def reconstruct_path(predecessor, start, end):
     path = [end]

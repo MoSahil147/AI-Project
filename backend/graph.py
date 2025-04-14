@@ -10,10 +10,12 @@ class Graph:
         with open(layout_file, 'r') as f:
             data = json.load(f)
 
+        # Initialize every node
         for node in data['nodes']:
             self.nodes[node['id']] = node
             self.adjacency_list[node['id']] = []
 
+        # Fill adjacency list from edges (undirected)
         for edge in data['edges']:
             self.adjacency_list[edge['from']].append(edge['to'])
             self.adjacency_list[edge['to']].append(edge['from'])

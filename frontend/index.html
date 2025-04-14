@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Emergency Evacuation Navigator</title>
-    <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8">
+  <title>AI Project - Evacuation Navigator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Emergency Evacuation Navigator</h1>
-        <div>
-            <label for="startNode">Enter Start Node:</label>
-            <input type="text" id="startNode" placeholder="e.g., A">
-            <button id="findPathBtn">Find Evacuation Path</button>
-        </div>
-        <div id="result">
-            <h2>Evacuation Path:</h2>
-            <p id="pathOutput"></p>
-        </div>
-    </div>
-    <script src="main.js"></script>
+  <div class="container">
+    <h1>Evacuation Path:</h1>
+    <input type="text" id="startNode" placeholder="Enter start node (A, B, etc.)">
+    <button id="findPathBtn">Find Evacuation Path</button>
+    <p id="pathOutput"></p>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
