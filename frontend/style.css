@@ -1,31 +1,89 @@
+/* Reset and base styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    text-align: center;
-    padding: 30px;
-  }
-  
-  .container {
-    background-color: white;
-    display: inline-block;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #ccc;
-  }
-  
-  input {
-    padding: 8px;
-    font-size: 16px;
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 8px 12px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  #pathOutput {
-    margin-top: 20px;
-    font-weight: bold;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container */
+.container {
+  background-color: #ffffff;
+  margin-top: 80px;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.container h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.subtitle {
+  color: #777;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* Input and Button */
+.form-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+button {
+  padding: 10px 18px;
+  font-size: 16px;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+/* Result Output */
+.result-box {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f7f4;
+  border: 1px dashed #4caf50;
+  border-radius: 8px;
+  min-height: 60px;
+}
+
+#pathOutput {
+  font-weight: bold;
+  color: #2e7d32;
+  font-size: 18px;
+  margin-top: 8px;
+}
