@@ -17,7 +17,7 @@ def evacuation():
     """
     Endpoint: http://127.0.0.1:5000/evacuation?start=A
     """
-    #extracting the starting node
+    #extracting the starting node from url
     start = request.args.get('start')
     #validating if wether its start of start is in graph or not
     if not start or start not in building_graph.nodes:

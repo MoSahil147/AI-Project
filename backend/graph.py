@@ -1,6 +1,4 @@
 import json
-
-
 class Graph:
     def __init__(self, layout_file):
         self.nodes = {} #storing node info
