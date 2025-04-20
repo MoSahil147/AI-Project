@@ -7,19 +7,30 @@
 </head>
 <body>
   <div class="container">
-    <h1> Emergency Evacuation Navigator</h1>
+    <h1>Emergency Evacuation Navigator</h1>
+    
+    <div class="map-container">
+      <canvas id="buildingMap" width="800" height="500"></canvas>
+      <div class="map-legend">
+        <div class="legend-item"><span class="dot blue"></span> Location</div>
+        <div class="legend-item"><span class="dot green"></span> Exit</div>
+        <div class="legend-item"><span class="line orange"></span> Evacuation Path</div>
+      </div>
+    </div>
 
     <div class="form-section">
-      <input type="text" id="startNode" placeholder="Enter your location node (e.g., A, B)" />
+      <input type="text" id="startNode" placeholder="Enter your location (A-Z)" />
       <button id="findPathBtn">Find Safe Path</button>
     </div>
 
     <div class="result-box">
       <h3>Evacuation Path:</h3>
       <p id="pathOutput">Awaiting input...</p>
+      <p id="textDirections"></p>
     </div>
   </div>
 
+  <script src="map.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

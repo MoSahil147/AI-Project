@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/sahil/Desktop/AI Project/venv"
+VIRTUAL_ENV="/Users/sahil/Desktop/AI Project devansh mittal(2022A7PS0901U), sahil mohapatra(2022A7PS0112U), ashutosh swain(2022A7PS1223G)/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

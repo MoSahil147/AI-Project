@@ -3,6 +3,7 @@ from flask_cors import CORS # this allows JS from the Frontend to access the bac
 from graph import Graph # We are using Graph class to represent the building layout well enough
 from bfs import bfs #to get shortes evacuation path
 import os #os helps in path management
+import json
 
 app = Flask(__name__)
 CORS(app)  # As per above imported library we are using to to allow the frontend to access the backend API
@@ -32,6 +33,16 @@ def evacuation():
 
     #for successful computed path as JSON response
     return jsonify({"path": path}), 200
+
+@app.route('/building-data', methods=['GET'])
+def get_building_data():
+    """
+    Endpoint to retrieve the building layout data for frontend visualization
+    """
+    # Return the building layout data
+    with open(layout_path, 'r') as f:
+        data = json.load(f)
+    return jsonify(data), 200
 
 #we are running the Flask Server here
 if __name__ == '__main__':
